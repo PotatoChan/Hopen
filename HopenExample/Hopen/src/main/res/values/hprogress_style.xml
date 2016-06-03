@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--圆圈-点-线型-->
+
+    <style name="hprogress_1" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="hprogress_loading_1">
+        <item name="android:indeterminateDrawable">@anim/hprogress_loading_1</item>
+
+        <item name="android:minWidth">107dp</item>
+        　　
+        <item name="android:maxWidth">107dp</item>
+        　　
+        <item name="android:minHeight">15dp</item>
+        　　
+        <item name="android:maxHeight">15dp</item>
+    </style>
+
+
+    <!--圆圈-点转-->
+
+    <style name="hprogress_2" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="hprogress_loading_2">
+        <item name="android:indeterminateDrawable">@anim/hprogress_loading_2</item>
+        　　
+        <item name="android:minWidth">45dip</item>
+        　　
+        <item name="android:maxWidth">45dip</item>
+        　　
+        <item name="android:minHeight">45dip</item>
+        　　
+        <item name="android:maxHeight">45dip</item>
+    </style>
+
+
+</resources>
