@@ -31,13 +31,57 @@ progress.show();
 
 
 
-## 二、HListView 下拉刷新（开发中）
+## 二、HMenuTabLayout 底部菜单栏
+
+定义一个HMenuTabLayout
+
+```xml
+    <cn.walink.hopen.tabhost.HMenuTabLayout
+        android:id="@+id/layout_menu_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+```
+
+
+
+```Java
+HMenuTabLayout hMenutablLayout=(HMenuTabLayout)findViewById(R.id.layout_menu_tab);
+//定义4个菜单
+List menuTabList = new ArrayList<>();
+        menuTabList.add(new MenuTab(this, HomeFrg.class, R.string.home, R.mipmap.ic_home_normal, R.mipmap.ic_home_selected));
+        menuTabList.add(new MenuTab(this, QuotationFrg.class, R.string.quotation, R.mipmap.ic_quotation_normal, R.mipmap.ic_quotation_selected));
+        menuTabList.add(new MenuTab(this, TransFrg.class, R.string.trans, R.mipmap.ic_trans_normal, R.mipmap.ic_trans_selected));
+        menuTabList.add(new MenuTab(this, MyFrg.class, R.string.my, R.mipmap.ic_my_normal, R.mipmap.ic_my_selected));
+
+//初始化菜单栏
+hMenuTabLayout.init(this, menuTabList);
+```
+
+
+
+此处需实现一个接口
+
+```java
+public interface HMenuTabLayoutListener {
+    public void afterClickTab(int index); //点击每个tab的事件
+    public int getIconColorWhenNormal(); //正常情况显示的icon
+    public int getIconColorWhenSelected(); //点击时显示的icon
+}
+```
 
 
 
 
 
-## 三、HScrollView 滚动视图（开发中）
+
+
+## 三、HListView 下拉刷新（开发中）
+
+
+
+
+
+## 四、HScrollView 滚动视图（开发中）
 
 
 

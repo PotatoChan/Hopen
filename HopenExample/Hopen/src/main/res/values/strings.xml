@@ -1,3 +1,32 @@
 <resources>
-    <string name="app_name">Hopen</string>
+    <string name="app_name">中塑之都</string>
+
+
+    <!--B-->
+    <string name="title_activity_hamal">搬运工</string>
+
+    <!--D-->
+    <string name="title_activity_login_by_pwd">登录</string>
+    <string name="title_activity_login_by_sms">短信登录</string>
+
+    <!--H-->
+    <string name="home">首页</string>
+    <string name="trans">货运</string>
+
+    <!--M-->
+    <string name="my">我的</string>
+
+    <!--Q-->
+    <string name="quotation">询报价</string>
+
+    <!--S-->
+    <string name="action_settings">设置</string>
+    <string name="title_activity_trade_detail">商品详情</string>
+
+    <!--W-->
+    <string name="title_activity_forget_password">忘记密码</string>
+    <!--Z-->
+    <string name="title_activity_register">注册</string>
+    <string name="title_activity_main">中塑之都</string>
+
 </resources>
